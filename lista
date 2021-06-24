@@ -1,0 +1,59 @@
+public class Main {
+ 
+  private int[] idades;
+  private int tamanho;
+  private String[] Alunos;
+
+public Main (int tam){
+    if (tam > 0){
+      tamanho = tam;
+      idades = new int [tamanho];
+      Alunos = new String[tamanho]; 
+  }
+}
+   
+ public int Insere (int idade, String nome) {
+   for (int i=0; i < idades.length; i++){
+     if (idades[i] == 0)  {
+       idades[i] = idade;
+       Alunos[i] = nome;
+       return idade;
+    }
+  }
+  return idade; 
+}
+
+public int Remove (int idade, String nome) {
+   for (int i=0; i < idades.length; i++){
+     if (idades[i] == idade) {
+     idades[i] = 0;
+     Alunos[i] = "";
+     return 0;  
+     }
+   }
+   return 0;
+}
+
+public void Busca (int idade, int chave){
+   for (int i = 0; i < idades.length; i++){
+      if (idades[i] == chave){
+         System.out.println("O aluno está no indece: " +i);
+    }  
+  }
+}
+
+public void Verificar (int pos){
+    if (idades[pos] >= 18){
+      System.out.println("O aluno maior de idade é: " +Alunos[pos]);
+    }
+}
+
+public static void main(String[] args){
+  Main m = new Main(5);
+       m.Insere (19, "Laura");
+       m.Insere (12, "Vinicíus");
+       m.Insere (22, "Carlos");
+       m.Insere (34, "Rodrigo");
+       m.Verificar (2);
+  }
+}
