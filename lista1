@@ -1,0 +1,45 @@
+// import java.util.Scanner;
+// class Main {
+
+//  private int[] valores;
+//  private int tamanho;
+
+//  public Main (int tam){//public e o nome da classe = metodo contrsutor contrsuir a classe
+  
+//   if( tam>0){
+//     tamanho = tam;
+//     valores = new int[tamanho];
+//   }
+
+// }
+//  public int Insere( int valor){
+// int i;
+
+//    for(i = 0; i < valores.length; i++ ){
+//    if(valores[i] == 0){
+//      valores[i] = valor;
+// return valor;
+//     }
+//    }
+// return -1;
+
+// }
+// public int Remove(int pos){
+//   int valor;
+//   if (pos >=0 && pos< valores.length){
+//    valor = valores[pos];
+//    valores[pos] = 0;
+//    return valor;
+//  }
+//  else return -1;
+// }
+
+//  public void Busca(int chave){
+//    int i;
+//    for (i = 0; i < valores.length; i++ ){
+// if(valores[i] == chave){
+//        System.out.print("O valor está no índice: " + i);
+//      }
+//    }
+//  }
+
